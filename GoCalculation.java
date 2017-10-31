@@ -8,7 +8,7 @@ public class GoCalculation {
 
 		my_calc[0] = new Calculation(mas);
 
-		Float result = my_calc.calc();
+		Float result = my_calc[0].calc();
 
 		System.out.println(result.toString());
 	}

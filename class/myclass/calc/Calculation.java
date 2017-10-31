@@ -1,5 +1,7 @@
 package myclass.calc;
 
+import myclass.calc.*;
+
 public class Calculation extends BaseCalculation {
 	public Calculation() {
 		this(null);
