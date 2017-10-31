@@ -1,13 +1,11 @@
 package myclass.calc;
 
 import myclass.calc.*;
+import java.util.*;
+
 
 public class Calculation extends BaseCalculation {
-	public Calculation() {
-		this(null);
-	}
-
-	public Calculation(float[] mas) {
+	public Calculation(ArrayList<Float> mas) {
 		m_mas = mas;
 	}
 
@@ -20,8 +18,8 @@ public class Calculation extends BaseCalculation {
 	public Float calc() {
 		float S = 0;
 
-		for (int i = 0; i < m_mas.length; i++) {
-			float a = m_mas[i];
+		for (int i = 0; i < m_mas.size(); i++) {
+			float a = m_mas.get(i);
 			float result = 1 + (float) Math.sin(a) + (float) Math.sin(a / 2);
 
 			S += result;
@@ -30,5 +28,5 @@ public class Calculation extends BaseCalculation {
 		return S;
 	}
 
-	private float[] m_mas;
+	private ArrayList<Float> m_mas;
 }
